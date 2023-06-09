@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Timeout</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .header{
+            width:100%;
+            height:100vh;
+            overflow:hidden;
+            background-color: rgba(27,124,175,255);
+            display:grid;
+            justify-content:center;
+            align-content:center;
+            text-align:center;
+        }
+        img{
+            width:50px;
+            height:50px;
+            background:none;
+            border:none;
+            border-radius:5px;
+        }
+        p{
+            font-size:30px;
+            font-weight:900;
+            font-size:normal;
+            color:white;
+        }
+        button{
+            font-size:25px;
+            font-weight:600;
+            padding:15px 35px;
+            border:none;
+            border-radius:10px;
+            color:white;
+            background-color:	rgb(255, 191, 0);
+        }
+        #showMyName{
+            font-size:45px;
+            font-weight:900;
+            font-size:normal;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <p>Click "Try it".Wait 3 seconds. The page will alert "Hello"</p>
+            <p>Click "stop" to prevent the first function to execute.</p>
+            <p>(you must click "stop" before the 2 seconds are up.)</p>
+            <br/>
+            <button onclick="myVar = setTimeout(myFunction, 2000)">Try it</button>
+
+            <button onclick="clearTimeout(myVar)">Stop it</button>
+        </div>
+    </div>
+
+    <!-- Java section start  -->
+
+    <script>
+        function myFunction () {
+            alert("hello");
+        };
+ 
+    </script>
+</body>
+</html>

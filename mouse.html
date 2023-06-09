@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Enter or leave</title>
+    <style>
+        .main-box{
+            width:100%;
+            height:100vh;
+            display: grid;
+            justify-content: center;
+            align-content:center ;
+            overflow: hidden;
+        }
+        #box{
+            width:150px;
+            height:150px;
+            background-color:rgb(179, 255, 0);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <div id="box"></div>
+    </div>
+
+    <!-- JavaScript section start  -->
+
+
+    <script>
+        const mEnter = document.getElementById('box');
+
+        mEnter.addEventListener('mouseenter' , () =>{
+            mEnter.style.backgroundColor = "red";
+            console.log("mouse Enter Bro");
+        });
+
+        mEnter.addEventListener('mouseleave' , () =>{
+            mEnter.style.backgroundColor = "pink";
+        });
+
+        
+    </script>
+</body>
+</html>

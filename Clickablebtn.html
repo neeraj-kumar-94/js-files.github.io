@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Clickable btn</title>
+    <style>
+        body{
+            background-color:rgba(84, 148, 136);
+        }
+        .header{
+            display:grid;
+            justify-content:center;
+            align-content:center;
+            text-align:center;
+            width:100%;
+            height: 100vh;
+            /* color:rgba(132,211,224,255); */
+            
+        }
+        button{
+          padding:10px 34px;
+          border:10px;
+          background-color: rgb(37, 150, 190);
+          border:none;
+          border-radius:10px;
+          /* margin-left:250px; */
+          margin-top:50px;
+          font-weight:600;
+          font-size:16px;
+          cursor:pointer;
+        }
+        #heading{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 50px;
+        }
+        /* .header .header-material div form{
+            padding-left:190px;
+        } */
+        
+
+    </style>
+</head>
+<body>
+    <!-- <h1>Click to change sentence</h1> -->
+    <div class='header'>
+        <div class="header-material">
+            <div>
+                <h1 id="heading">Change the content of the h1</h1>
+            </div>
+            <div>
+                <form action="">
+                    <label for="">Male</label>
+                    <input type="radio" name="gender" id="">
+                    <label for="">Female</label>
+                    <input type="radio" name="gender" id="">
+                    <label for="">Other</label>
+                    <input type="radio" name="gender" id="">
+                </form>
+            </div>
+            <div>
+                <button onclick ="changeContent()">Click Me</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const changeContent = () =>{
+            // document.getElementById('heading').innerHTML = "Welcome to my Website";
+             
+            // Rule:-Reference ki sahayta se 
+            // const headingchange = document.getElementById('heading');
+            // headingchange.innerHTML = "Welcome to my Website";
+
+
+            // Rule:-Query selector ki sahayta se button ko clickable banana
+            document.querySelector("#heading").innerHTML = "Welcome to my website";
+
+
+            // Rule:-Gender mein kon sa naam use ho raha hai uska pata lagana
+            console.log(document.getElementsByName('gender'));
+        }
+
+
+    </script>
+</body>
+</html>

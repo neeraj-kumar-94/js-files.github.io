@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="eventsjava.css">
+    <title>Onclick Diff addEventListener</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+}
+body{
+    background-color: rgb(5, 110, 110);
+}
+h1{
+    text-align:center;
+    word-spacing: 5px;
+    padding-bottom: 40px;
+    padding-top:60px;
+    color:rgb(237, 240, 250);
+}
+.header{
+    display:grid;
+    justify-content:center;
+    align-content: center;
+}
+
+.header .header-paragraph{
+    width:200px;
+    height:90px;
+    background-color:rgb(252, 186, 3);
+    margin:20px;
+    /* text-align: center; */
+    border:none;
+    border-radius:10px;
+    display: grid;
+    justify-content: center;
+    align-content:center;
+    text-decoration:none;
+}
+
+p{
+    color:white;
+    font-size:19px;
+    font-weight:600;
+    padding:15px;
+    text-align: center;
+    /* line-height: 120px; */
+    /* width:80%; */
+    
+}
+    </style>
+</head>
+<body>
+    <h1>Different Between inline Event and Event Listener</h1>
+    <div class="header">
+        <a href="#" class="header-paragraph" id="thirdWay" >
+            <p>Inline Event</p>
+        </a>
+        <a href="#"  class="header-paragraph" id="fourtWay">
+            <p>Event Listeners</p>
+        </a>
+    </div>
+
+    <script>
+    //    3rd Way 
+    const thirdWay = document.getElementById("thirdWay");
+
+    thirdWay.onclick = function(){
+        alert("I an another way of using events")
+    }
+    
+    thirdWay.onclick = function(){
+        alert("I am again using calling again")
+    }
+
+    // 4th way addEventListener (most important rule)
+    // Rule:- addEventlistener ke andar jitne chahe event add kar saktein hai 
+    //        ye overwrite nahi hota hai 
+
+    // 1st way
+    const fourtWay = document.querySelector("#fourtWay");
+
+    fourtWay.addEventListener("click" , () => {
+        alert("I am another way of using events.")
+    });
+
+    // 2nd way
+    const callingFun = () => {
+        alert("I am another way of using events 2.")
+    }
+    
+    fourtWay.addEventListener("click" ,callingFun);
+    
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Element</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+
+    <style>
+        body{
+            overflow: hidden;
+            width:100%;
+            height:100vh;
+            overflow: hidden;
+            display:grid;
+            justify-content: center;
+            align-content: center;
+            /* text-align:center; */
+            background-color:rgb(63, 89, 20);
+            font-family: 'Shadows Into Light', cursive;
+        }
+        div{
+            font-size:40px;
+            font-style:normal;
+            font-weight:600;
+            color:rgb(237, 244, 245);
+        }
+        input{
+            width:200px;
+            height:20px;
+            padding:10px 20px;
+            font-size:16px;
+            /* color:rgb(114, 126, 237); */
+            /* background-color:rgba(135, 177, 255, 1); */
+            border:none;
+            margin-left:20px;
+        }
+        select{
+            width:150px;
+            height:30px;
+            /* color:rgb(114, 126, 237); */
+            /* background-color:rgba(135, 177, 255, 1); */
+            border:none;
+            margin-left:20px;
+            font-size:16px;
+            padding-left:10px;
+            margin-top:40px;
+        }
+
+        #result{
+            font-style:normal;
+            font-family: 'Righteous', cursive;
+            color:black;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <labe for="">My name</labe>
+        <input type="text" id="ice" name="">
+        <br/>
+        <labe for="">choose an ice cream flavor
+            <select id="iceCreams" name="iceCreams" onchange="selectElement()">
+                <option  value="">Select one...</option>
+                <option  value="Chocolate">Chocolate</option>
+                <option  value="Sardine">Sardine</option>
+                <option  value="Vanilla">Vanilla</option>
+            </select>
+            <br/>
+            <div id="result"></div>
+        </labe>
+    </div>
+
+    <!-- Java section start -->
+    <script>
+        const selectElement = () => {
+            const inputChange = document.getElementById("ice").value;
+            const iceCreams = document.getElementById("iceCreams").value;
+            const result = document.getElementById("result") ;
+            
+            result.innerHTML = ` Mr ${inputChange} and ${iceCreams} Ice-cream flavor `;
+
+            console.log(`${inputChange} and ${iceCreams}`);
+
+        }
+    </script>
+</body>
+</html>

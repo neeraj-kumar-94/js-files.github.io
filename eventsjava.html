@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="eventsjava.css">
+    <title>Events in JavaScript</title>
+</head>
+<body>
+    <h1>Diffrent Events Types In JavaScript</h1>
+    <div class="header">
+        <a href="#" class="header-paragraph" onclick="alert('I am awesome,But no one use me')">
+            <p>simple Inline alert ()</p>
+        </a>
+        <a href="#"  class="header-paragraph" onclick="callingFunction()">
+            <p>By calling a Function</p>
+        </a>
+        <a href="#"  class="header-paragraph" id="thirdWay">
+            <p >Inline Event </p>
+        </a>
+        <a href="#"  class="header-paragraph" id="fourtWay">
+            <p>Event listeners</p>
+        </a>
+    </div>
+
+    <script>
+        // 2nd way fo writin function 
+        const callingFunction = () =>{
+            alert('most common way of writing functions')
+        }
+
+        // 3rd way of writing function 
+        const thirdWay = document.getElementById('thirdWay');
+
+        thirdWay.onclick = function(){
+            alert('most common way of writing functions again');
+        }
+
+        // 4th way of writing function 
+        const fourtWay = document.querySelector('#fourtWay');
+
+        fourtWay.addEventListener('click', () =>{
+            alert('I love this way of writing functions');
+        })
+
+    </script>
+    
+</body>
+</html>

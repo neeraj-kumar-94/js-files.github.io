@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:rgb(26, 201, 190);
+            width:100%;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            overflow:hidden;
+            font-family: 'Dancing Script', cursive;
+
+        }
+        p{
+            padding:100px;
+            font-size:25px;
+            text-indent:100px;
+            text-align:justify;
+            color:white;
+            font-weight:600;
+        }
+
+    </style>
+    <title>Mouse Event</title>
+</head>
+<body>
+    <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()" >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis at temporibus vero modi eaque voluptatem distinctio sequi harum corrupti cupiditate rem magnam, nostrum voluptas nisi cumque ut provident velit, commodi fugit recusandae odit illum laboriosam veniam officia. Odio nobis, consectetur optio obcaecati, eum porro earum autem atque ut iure accusantium. Doloribus, fugiat, cum voluptatum aliquam perspiciatis voluptate optio, perferendis nemo veniam porro laudantium facere blanditiis corrupti? Ipsa sed quibusdam, nobis impedit reprehenderit enim a. Dolorem explicabo ipsa veniam aliquam similique repellendus in error molestias, harum aut autem suscipit corporis blanditiis perferendis labore pariatur vitae fuga. Delectus voluptatum ratione laudantium rerum!
+    </p>
+    <!-- JavaScript section start -->
+
+    <script>
+        function mouseDown() {
+            document.getElementById("myP").style.color = "blue";
+        }
+
+        function mouseUp() {
+            document.getElementById("myP").style.color = "green";
+        }
+
+        
+    </script>
+</body>
+</html>
