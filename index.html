@@ -69,7 +69,7 @@ p{
 <body>
     <h1>Diffrent Events Types In JavaScript</h1>
     <div class="header">
-        <a href="#" class="header-paragraph" onclick="alert('this is a very simple method')">
+        <a href="#" class="header-paragraph" onclick="alert('I am awesome,But no one use me')">
             <p>simple Inline alert ()</p>
         </a>
         <a href="#"  class="header-paragraph" onclick="callingFunction()" >
@@ -85,13 +85,13 @@ p{
     
              <script>
                 const callingFunction = () => {
-                    alert('this is a impotant method and i am very happy.');
+                    alert('most common way of writing functions');
                 };
 
                 const thirdWay = document.getElementById('thirdWay');
 
                 thirdWay.onclick = function ()  {
-                    alert("this is the most beautiful method.");
+                    alert("most common way of writing functions again");
                 }
 
                 // 4th way 
@@ -99,7 +99,7 @@ p{
                 const fourtWay = document.querySelector("#fourtWay");
 
                 fourtWay.addEventListener("click", () => {
-                    alert("arju i love you.");
+                    alert("I love this way of writing functions.");
                 });
 
                 // console.log(fourtWay);
