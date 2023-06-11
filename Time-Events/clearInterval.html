@@ -42,6 +42,15 @@
             color:white;
             background-color:	rgb(255, 191, 0);
         }
+        #btn1{
+            font-size:30px;
+            font-weight:600;
+            padding:20px 45px;
+            border:none;
+            border-radius:10px;
+            color:white;
+            background-color:	rgb(255, 191, 0);
+        }
         #showMyName{
             font-size:45px;
             font-weight:900;
@@ -59,7 +68,8 @@
                 ?
             </p>
             <br/>
-            <button id="btn">Click here</button>
+            <button id="btn">Start</button>
+            <button id="btn1">Stop</button>
         </div>
     </div>
 
@@ -68,7 +78,28 @@
 
 
     <script>
-        
+        const stopNum = document.querySelector("p");
+        const btn = document.querySelector('#btn');
+        const stopInterval = document.querySelector('#btn1');
+
+        let num = 0;
+        let timeRef;
+
+        const showmyName = () => {
+            stopNum.innerHTML = "Loading....."
+
+        timeRef = setInterval(() => {
+            stopNum.innerHTML = `${num}`;
+            num++;
+        }, 1000);
+
+        }
+
+        btn.addEventListener('click' , showmyName);
+
+        stopInterval.addEventListener("click",() => {
+            clearInterval(timeRef);
+        })
     </script>
 </body>
 </html>

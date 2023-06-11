@@ -2,69 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index.html</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="eventsjava.css"> -->
-    <title>index html</title>
-    <style>
-         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Roboto', sans-serif;
-    font-style:normal;
-}
-body{
-    background-color: rgb(74, 89, 15);
-}
-h1{
-    text-align:center;
-    word-spacing: 5px;
-    padding-bottom: 40px;
-    padding-top:60px;
-    color:rgb(237, 240, 250);
-}
-.header{
-    display:grid;
-    justify-content:center;
-    align-content: center;
-}
-
-.header .header-paragraph{
-    width:150px;
-    height:120px;
-    background-color:rgb(252, 186, 3);
-    margin:20px;
-    /* text-align: center; */
-    border:none;
-    border-radius:10px;
-    display: grid;
-    justify-content: center;
-    align-content:center;
-    text-decoration:none;
-}
-
-p{
-    color:white;
-    font-size:17px;
-    font-weight:600;
-    padding:15px;
-    text-align: center;
-    /* line-height: 120px; */
-    /* width:80%; */
-    
-}
-    </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Events in JavaScript</title>
 </head>
 <body>
     <h1>Diffrent Events Types In JavaScript</h1>
@@ -72,7 +13,7 @@ p{
         <a href="#" class="header-paragraph" onclick="alert('I am awesome,But no one use me')">
             <p>simple Inline alert ()</p>
         </a>
-        <a href="#"  class="header-paragraph" onclick="callingFunction()" >
+        <a href="#"  class="header-paragraph" onclick="callingFunction()">
             <p>By calling a Function</p>
         </a>
         <a href="#"  class="header-paragraph" id="thirdWay">
@@ -82,30 +23,28 @@ p{
             <p>Event listeners</p>
         </a>
     </div>
+
+    <script>
+        // 2nd way fo writin function 
+        const callingFunction = () =>{
+            alert('most common way of writing functions')
+        }
+
+        // 3rd way of writing function 
+        const thirdWay = document.getElementById('thirdWay');
+
+        thirdWay.onclick = function(){
+            alert('most common way of writing functions again');
+        }
+
+        // 4th way of writing function 
+        const fourtWay = document.querySelector('#fourtWay');
+
+        fourtWay.addEventListener('click', () =>{
+            alert('I love this way of writing functions');
+        })
+
+    </script>
     
-             <script>
-                const callingFunction = () => {
-                    alert('most common way of writing functions');
-                };
-
-                const thirdWay = document.getElementById('thirdWay');
-
-                thirdWay.onclick = function ()  {
-                    alert("most common way of writing functions again");
-                }
-
-                // 4th way 
-
-                const fourtWay = document.querySelector("#fourtWay");
-
-                fourtWay.addEventListener("click", () => {
-                    alert("I love this way of writing functions.");
-                });
-
-                // console.log(fourtWay);
-             </script>
-    
-</body>
-</html>
 </body>
 </html>
