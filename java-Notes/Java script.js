@@ -1745,4 +1745,142 @@ var b = 20;
 
 
 
-// ***************************** ES2019 Features **************************************
+// ***************************** flat() metohod  **************************************
+
+// flat() metohod ke use se array ke andar kitne bhi array ho sabhi ko flat kar dega 
+
+
+
+// Converting 2d and 3d array into one dimensial array *******
+//  const arr = [
+//     ['zone_1', 'zone_2'],
+//     ['zone_3', 'zone_4'],
+//     ['zone_5', 'zone_6'],
+//     ['zone_7', 'zone_8'],
+//  ];
+
+//  let flatArr = arr.reduce((accum ,currVal) =>{
+//     return accum.concat(currVal);
+//  } ) 
+
+//  console.log(flatArr);
+
+
+//  flat() Array ke use se :-
+        //    ek array ke andar kitne bhi array ho sabhi ko flat karta hai 
+
+//  const arr = [
+//     ['zone_1', 'zone_2'],
+//     ['zone_3', 'zone_4'],
+//     ['zone_5', 'zone_6'],
+//     ['zone_7', 'zone_8' , ['zone_7', 'zone_8' , ['zone_7', 'zone_8' ,]]],
+//  ];
+
+//  console.log(arr.flat(Infinity));
+
+// ES2020:-
+// ****************************** BigInt (most important)*******************************
+
+// bigInt :- maximum number nikaltein kisi word ke usme aur number add karna
+
+// let oldNum = Number.MAX_SAFE_INTEGER;
+// // console.log(oldNum);
+// // console.log(9007199254740991n + 12n);
+
+// const newNum = 9007199254740991n + 12n ;
+
+
+// console.log(newNum);
+// console.log(typeof( newNum));
+
+
+
+
+
+// ****************************** ES2014 *******************************
+// MOST importan rule iska kaam hota jaise ki hamein let chhod diya 
+// to ye batayega ki yaha par let ka use hoga
+
+// "use strict";
+// let  x = 3.14;
+// console.log(x);
+
+
+
+
+// ***************************************************************************
+
+
+
+
+//************************ */ Advance Java Script ******************************
+
+// 1.Event Propagation (Event Bubbling and Event capturing)
+// 2.Higher Order Function 
+// 3.Callback Function 
+// 4.AJAX call using XMLHttperquest
+// 5.BONUS Section JSON 
+// 6.Fetch API 
+// 7.Promises
+// 8.Async-Await 
+// 9.Error Handling in JS 
+
+
+// 1.Event Propagation (Event Bubbling and Event capturing):-
+
+// a. Bubbling Phase - iska kaam hota bottom to top alert karne ka 
+//           jab  ek div ke andar ek aur div ho to phle vo apne ko 
+// alert karaiga aur baad mein apne paren element ko 
+
+
+
+
+// ************************ calculator  ******************************
+// 1. Higher order function :
+                    //  aise function jo doosre function ko as a argument accept karte ho
+
+// 2. Callback function : 
+                    //  aise function jo doosre function ke andar as an arguement pass hota hai
+
+
+
+// const add = (a , b) => {
+//     return a+b;
+// }
+
+// const subs = (a,b) => {
+//     return Math.abs(a-b);
+// }
+
+// const mult = (a,b) => {
+//     return a*b;
+// }
+
+// const calculator = (num1, num2 , operator) => {
+//     return operator(num1 , num2);
+// }
+
+// calculator(5,2,subs);
+
+// console.log(calculator(5,2,subs));
+
+
+
+// ********************************** How javaScript works and Asyncharonous JavaScript ***********************************
+
+// Hosting in JavaScript :
+
+// console.log(myName);
+// var myName ;
+// myName = "thapa";
+
+// // How it will be in output during creation phase 
+// // creation phase mein jakar data serial wise automatic ho jayega
+// // hostin ka kaam yahi hota hai 
+
+
+// 1. var myName ;undefined;
+// 2.console.log(myName);
+// 3.myName = "thapa";
+
+// tab vaha par myName ki undefined aata hai

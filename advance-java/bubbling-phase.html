@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Propagation </title>
+    <title>Bubbling phase</title>
     <style>
         body{
             width: 100%;
@@ -51,8 +51,11 @@
             event.stopPropagation();
         }
 
-        parentId.addEventListener('click' , parentCall , true);
-        childId.addEventListener("click" , childCall ,true);
+        parentId.addEventListener('click' , parentCall);
+        childId.addEventListener("click" , childCall);
     </script>
 </body>
 </html>
+
+<!-- event.stopPropagation(); is method ke use se jab child div par click karenge to child div 
+div active hoga aur jab parent element par click karenge to parent element active hoga -->
