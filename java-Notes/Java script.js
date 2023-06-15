@@ -1884,3 +1884,138 @@ var b = 20;
 // 3.myName = "thapa";
 
 // tab vaha par myName ki undefined aata hai
+
+
+
+
+// ****************** Scope chain and Lexical Scope **************************
+
+// Scope chai :-
+            //  Scope chain ins js is lexically defined (ham code ko dekhkar hi bata saktein 
+            // ki kis variable  ki kya value hogi)
+
+// Example:- 
+
+
+// let a = "Hello guys "; 
+
+// const first = () => {
+//     let b = "how are you ?"
+
+//     const second = () => {
+//         let c = " Hii , I am fine thank you";
+//         console.log(a+b+c);
+//     }
+//     second();
+//     console.log(a+b+c);
+// }
+
+// first();
+
+
+
+// *****************************  Closures in JavaScript ***************************
+// Closures - iske anusr inner function outer function ko Exis kar sakta hai 
+
+// // Example-
+
+// const outerFun = (a) => {
+//     let b = 10;
+//     const innerFun = () => {
+//         let sum = a+b;
+//         console.log(`the sum of the two no is ${sum}`);
+//     }
+//     innerFun();
+// }
+// outerFun(5);
+
+
+// Exaple 2 :-
+// console.dir(); aur detail mein explain karta hai 
+// Closures mein data store rahta hai 
+
+// const outerFun = (a) => {
+//     let b = 10;
+//     const innerFun = () => {
+//         let sum = a+b;
+//         console.log(`the sum of the two no is ${sum}`);
+//     }
+//     return innerFun;
+// }
+// let checkClousure = outerFun(5);
+// console.dir(checkClousure);
+
+
+
+// ********************** Differences between synchronous and Asynchronous javaScript ****************
+
+// 1. synchronous - iske anusar jab tak pahla karya nahi hota tab tak hum doora nahi 
+// kar sakte (ye pahle hota tha )
+
+// const fun2 = () => {
+//     console.log(`Function 2 is called `);
+// }
+
+// const fun1 = () => {
+//     console.log(`Function 1 is called`);
+//     fun2();
+//     console.log(`Function 1 is called Again`);
+// }
+
+// fun1();
+// 2.Asynchronous - yadi doosare kaam mein 5 second late hai to hu pahle 
+                //    doosra kaam kar saktein hai 
+
+
+// 2. Asynchronous window object ke andar aata hai 
+
+// const fun2 = () => {
+//     setTimeout(() => {
+//         console.log(`Function 2 is called`);
+//     },2000);
+// }
+
+// const fun1 = () => {
+//     console.log(`Function 1 is called `);
+//     fun2();
+//     console.log(`Function 1 is called again`);
+// }
+
+// fun1();
+
+
+
+// ***********************  Event Loop in JavaScript *****************************
+
+// function - ko jab bhi call call karte hai to unko khud ka Excution context milta hai 
+            
+
+
+// *********************** Function currying in JavaScript ***************************
+
+
+// function sum(num1){
+//     console.log(num1);
+//     return function(num2) {
+//         console.log(num1,num2);
+//         return function(num3) {
+//             console.log(num1+num2+num3);
+//         }
+//     }
+// }
+
+// sum(5)(3)(8);
+
+// currying function:-
+            //   ek function doosre function ko return karta doosra funtion 
+            // teesre function ko return karta hai 
+
+// const sum = (num1) => (num2) => (num3) => console.log(num1+num2+num3);
+
+// sum(5)(3)(8);
+
+
+
+
+// ***************************  Ajax call using XMLHttprequest   ***********************************
+
