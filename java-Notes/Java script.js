@@ -1950,7 +1950,7 @@ var b = 20;
 // ********************** Differences between synchronous and Asynchronous javaScript ****************
 
 // 1. synchronous - iske anusar jab tak pahla karya nahi hota tab tak hum doora nahi 
-// kar sakte (ye pahle hota tha )
+                    // kar sakte (ye pahle hota tha )
 
 // const fun2 = () => {
 //     console.log(`Function 2 is called `);
@@ -1964,7 +1964,7 @@ var b = 20;
 
 // fun1();
 // 2.Asynchronous - yadi doosare kaam mein 5 second late hai to hu pahle 
-                //    doosra kaam kar saktein hai 
+                //  doosra kaam kar saktein hai 
 
 
 // 2. Asynchronous window object ke andar aata hai 
@@ -2007,7 +2007,7 @@ var b = 20;
 // sum(5)(3)(8);
 
 // currying function:-
-            //   ek function doosre function ko return karta doosra funtion 
+            //   ek function doosre function ko return karta hai doosra funtion 
             // teesre function ko return karta hai 
 
 // const sum = (num1) => (num2) => (num3) => console.log(num1+num2+num3);
