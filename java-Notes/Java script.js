@@ -144,7 +144,6 @@
 // console.log(num1 === num2);
 
 
-
 // // Section 5 Airthmetic operators in Javascript ################
 
 // // console.log(5 + 10);
@@ -179,8 +178,8 @@
 
 // // comperasion operator ********************************
 
-var a = 30;
-var b = 20;
+// var a = 30;
+// var b = 20;
 
 // Equal(==)
 // console.log(a == b);
@@ -193,7 +192,6 @@ var b = 20;
 
 // // Greater than or equal(>=)
 // console.log(a >= b)
-
 
 
 
@@ -221,7 +219,6 @@ var b = 20;
 //   // logical not true ko false aur false ko true batata hai
 // //    console.log(!((a > b) || (b < 0)));
 //   //  console.log(!false);
-
 
 
 
@@ -257,6 +254,7 @@ var b = 20;
 // }else{
 //         console.log("no need to take a rain coat");
 // }
+
 
 
 
@@ -334,6 +332,7 @@ var b = 20;
 
 
 
+
 // // switch statement************************
 // var area = "circle";
 // var PI = 3.142, l=5 , b=4 ,r=3;
@@ -386,12 +385,13 @@ var b = 20;
 //                 break;
 
 //         case 'rectangel' :
-//                 console.log("the area of the rectangle :" +(l*b));
+//                 console.log("the area of the rectangle :" + (l*b));
 //                 break;
         
 //         default : 
 //                 console.log("please enter valid data");
 // }
+
 
 
 
@@ -408,9 +408,8 @@ var b = 20;
 
 
 
-// // Note :- if (num++) ko agar nahi likha jaaye to ye anant tak chalta rahega 
 
-
+// // Note :- if (num++) ko agar nahi likha jaaye to ye anant (infinity) tak chalta rahega 
 
 
 // // Do-while loop statement#####################
@@ -430,6 +429,10 @@ var b = 20;
 
 // for(var num = 0; num <= 10; num++){
 //         console.log(num);
+// }
+
+// for (var num = 0; num <= 10; num++){
+//     console.log(num);
 // }
 
 
@@ -453,6 +456,11 @@ var b = 20;
 // // ***************Functions in Javascript**************************************
 //        // A javascript functions is a block of code designed to perform a particular task.
 
+// for(var num = 1; num <= 10 ; num++){
+//     // console.log(num);
+//     var table = 10;
+//     console.log(table + "*" + num + "=" + table*num);
+// }
 
 
 
@@ -460,20 +468,20 @@ var b = 20;
 // //  (1) Funtion in javascript############
 //      // function defination ko function declaration aur function statement bhi kahte hai
 
-// //      var a = 10;
-// //      var b = 20;
-// //      var sum = a+b;
-// //      console.log(sum);
+    //  var a = 10;
+    //  var b = 10;
+    //  var sum = a+b;
+    //  console.log(sum);
 
 // // isi ko function defination se 
 
-// // function sum(){
-// //         var a = 10 , b = 20;
-// //         var total = a+b;
-// //         console.log(total);
-// // }
 
 
+// function sum() {
+//     var a = 10 , b = 20;
+//     var total = a+b;
+//     console.log(total);
+// }
 // // (2) calling functions#############
 // // function defination aur calling function milkar hi complete function banta hai 
 
@@ -507,19 +515,18 @@ var b = 20;
 
 
 
+// // 3 Function Expression(############################)
 
-
-// // 3 Function Expression############################
 
 // // "function Expression simply means
 // // create a function and put in into to the variable funExp"
 
-// // function sum(a,b){
-// //                 var total = a+b;
-// //                 console.log(total);
-// //         }
+// function sum(a,b){
+//                 var total = a+b;
+//                 console.log(total);
+//         }
 
-// //   var funExp = sum(20,40);
+//   var funExp = sum(20,40);
 
 
 
@@ -539,17 +546,17 @@ var b = 20;
 // //  5 Anonymous Function####################
 
 
-// // var funExp = function(a,b){
-// //         return total = a+b;
-// // }
+// var funExp = function(a,b){
+//         return total = a+b;
+// }
 
-// // var sum = funExp(52,70);
-// // var sum1 = funExp(20,20);
+// var sum = funExp(52,70);
+// var sum1 = funExp(20,20);
 
-// // console.log('the sum two number is ' + sum);
+// console.log('the sum two number is ' + sum);
 
-// // console.log(sum > sum1);
 
+// console.log(sum > sum1);
 
 
 
@@ -579,11 +586,11 @@ var b = 20;
 
 
 // // LET#####
-// // let myName = "Neeraj kumar";
-// // console.log(myName);
+// let myName = "Neeraj kumar";
+// console.log(myName);
 
-// // myName = "Kandela shamli";
-// // console.log(myName);
+// myName = "Kandela shamli";
+// console.log(myName);
 
 
 // var myName = "Neeraj kumar";
@@ -594,11 +601,11 @@ var b = 20;
 // // const ke andar yadi koi value rakhte ki to usko change nahi kar saktein hai 
 
 
-// // const myName = "Neeraj kumar";
-// // console.log(myName);
+// const myName = "Neeraj kumar";
+// console.log(myName);
 
-// // myName = "Kandela shamli";
-// // console.log(myName);
+// myName = "Kandela shamli";
+// console.log(myName);
 
 
 
@@ -640,7 +647,7 @@ var b = 20;
 // biodata();
 
 
-// // CONST :-
+// CONST :-
 // function biodata(){
 //         const myFirstName = "Neeraj";
 //         console.log(myFirstName);
@@ -721,10 +728,11 @@ var b = 20;
 // // Array ka index 0 se start hota aur serial wise chalta rahta hai
 // // array fomule ke andar ek se jyada value ko add kar sakte aur kuch bhi value add kar saktein hai
 
-// var myFriends = ["rohan" , "mohan" , "gaurav" , "Aman" ];
+var myFriends = ["rohan" , "mohan" , "gaurav" , "Aman" ];
 
 // console.log(myFriends[myFriends.length - 1]);
 // console.log(myFriends);
+
 
 
 // // Note :- Sabhi naamo mein se ek naam display karana ho tab
@@ -736,7 +744,6 @@ var b = 20;
 // // console.log(myFriends.length);
 
 
-
 // // we use for loop to navigate#################
 
 // var myFriends = ["rohan" , "mohan" , "gaurav" , "Aman" ];
@@ -744,6 +751,8 @@ var b = 20;
 // for(i = 0 ; i < myFriends.length ; i++){
 //         console.log(myFriends[i]);
 // }
+
+
 
 
 
@@ -767,9 +776,10 @@ var b = 20;
 
 
 
+
 // // Array prototype forEach() ############################
 
-// var myFriends = ["rohan" , "mohan" , "gaurav" , "Aman" ];
+var myFriends = ["rohan" , "mohan" , "gaurav" , "Aman" ];
 
 // // Answer type one 
 // myFriends.forEach(function(elements , index , array){
@@ -791,15 +801,9 @@ var b = 20;
 
 
 // // Formula Fat arrow Function ( =>)
-// // myFriends.forEach((elements , index ,array) => {
-// //         console.log(elements + " index : " + index + " " + array);
-// // }
-
-
-
-
-
-
+// myFriends.forEach((elements , index ,array) => {
+//         console.log(elements + " index : " + index + " " + array);
+// }
 
 
 // Push metod###################
@@ -808,7 +812,6 @@ var b = 20;
 
 // animals.push('chicken');
 // console.log(animals);
-
 
 // Note :- interview mein poocha jata ki 'push method ' kya return karata hai
 // push metod hamein length provide karata hai 
@@ -862,7 +865,7 @@ var b = 20;
 
 // // main value
 // console.log(plants);
-// // reove value
+// // remove value
 // console.log(plants.pop());
 // // new value
 // console.log(plants);
@@ -880,9 +883,6 @@ var b = 20;
 // console.log(plants.shift());
 // // new value
 // console.log(plants);
-
-
-
 
 
 
@@ -1363,6 +1363,7 @@ var b = 20;
 
 
 
+
 // ************* Set Full year method **************
 
 // ###########  Dates Methods  ##############
@@ -1374,7 +1375,6 @@ var b = 20;
 // console.log(curDate.setMonth(10));
 // console.log(curDate.setDate(5));
 // console.log(curDate.toLocaleString());
-
 
 
 
@@ -1419,6 +1419,7 @@ var b = 20;
 // console.log(Math.round(num));
 
 
+
 // Rule (3)
 // Math.pow() method-----
 // console.log(Math.pow(2,3));
@@ -1434,6 +1435,8 @@ var b = 20;
 // console.log(Math.sqrt(45));
 
 
+
+
 // Rule (5)
 // Math.abs() method Negative value ko positive value mein convert karta hai
 // console.log(Math.abs(-55));
@@ -1442,9 +1445,12 @@ var b = 20;
 // console.log(Math.abs(4-10));
 
 
+
+
+
 // Rule (6)
 // Math.ceil()
-// Math.ceil():-ke prayos yadi point se baad ki value 5 se ka hai to +1 hoga
+// Math.ceil():-ke prayos yadi point se baad ki value 5 se kam hai to +1 hoga
 
 
 // console.log(Math.ceil(4.1));
@@ -1459,16 +1465,23 @@ var b = 20;
 // Rule (7)
 // Math.floor():-
 // is method mein point ke baad kaisi bhi sankhya ho usse koi fark nahi padta
+// point ke value jyo ki tyo rahegi
+
 
 // console.log(Math.floor(4.7));
+// console.log(Math.floor(4.1));
 // console.log(Math.floor(99.7));
 // console.log(Math.floor(10.10));
 // console.log(Math.floor(100.5));
 
 
+
+
+
 // Rule (8)
 // Math.min() sabse chhoti value nikalta hai
 // console.log(Math.min(0,150,90,-30,1999,-100));
+
 
 
 // Rule (8)
@@ -1481,6 +1494,7 @@ var b = 20;
 // mein yadi 10 se multiply kar rahe hai to 0 - 9 ki value hi aaygi 
 
 // console.log(Math.floor(Math.random()*10));
+ 
 
 
 // Rule (10)
@@ -1496,14 +1510,14 @@ var b = 20;
 
 // oops = object oriented programming in JAVASCRIPT
 
-// OOPS IN JAVASCRIPT TWO PART HOTE HIA 
+// OOPS IN JAVASCRIPT TWO PART HOTE Hai
 // 1. what is object literals?
 // 2. what is "this" object?
 
 // 1 way 
 // let bioData = {
 //     myName : "Neeraj kuamr",
-//     myVillage :" Shekhupura + kandela (Shamli)",
+//     myVillage :" Shekhupura , kandela (Shamli)",
 //     getData : function(){
 //         console.log(`my name is ${bioData.myName} and my village is ${bioData.myVillage}`); 
 //     }
@@ -1890,7 +1904,7 @@ var b = 20;
 
 // ****************** Scope chain and Lexical Scope **************************
 
-// Scope chai :-
+// Scope chain :-
             //  Scope chain ins js is lexically defined (ham code ko dekhkar hi bata saktein 
             // ki kis variable  ki kya value hogi)
 
@@ -2017,5 +2031,4 @@ var b = 20;
 
 
 
-// ***************************  Ajax call using XMLHttprequest   ***********************************
 
